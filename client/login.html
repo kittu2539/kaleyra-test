@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Voting System</title>
+  <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+  <meta name="google-signin-client_id" content="votingapp-358818">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+  <h1> Login Page</h1>
+  <form action="/login" method="POST">
+      <label for="email">Email</label><br>
+      <input type="email" class="form-control" name="username" required>
+      <br><br>
+      <label for="password">Password</label>
+      <input type="password" class="form-control" name="password" required>
+      <br><br>
+      <a href="http://127.0.0.1:5500/client/second.html"><button>sumbit</button></a>
+      <br><br>
+        <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
+          <button><i class="fab fa-google"></i>
+          Sign In with Google </button>
+        </a>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+  </form>
+</body>
+</html>
